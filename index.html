@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form id="registrationForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="gender">Gender:</label>
+<select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+  <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Interests:</label>
+        <div>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="art" name="interests" value="art">
+            <label for="art">Art</label><br><br>
+        </div>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="">Select City</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Manali">Manali</option>
+            <option value="Gangotri">Gangotri</option>
+            <option value="Kedarnath">Kedarnath</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br><br>
+ <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button onclick="myFunction">Try it</button>
+        <script>function myFunction (){confirm("Are you sure to try?");}</script>
+    </form>
+</body>
+</html>
+
